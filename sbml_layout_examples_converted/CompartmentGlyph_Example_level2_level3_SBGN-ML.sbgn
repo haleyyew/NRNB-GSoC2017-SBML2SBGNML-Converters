@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+    <extension>
+        <sbfcanno:unitDefinition xmlns:sbfcanno="http://www.sbfc.org/sbfcanno" sbfcanno:name="">
+            <sbfcanno:kindLITRE sbfcanno:exponent="1.0" sbfcanno:kind="LITRE" sbfcanno:multiplier="1.0" sbfcanno:scale="0"/>
+        </sbfcanno:unitDefinition>
+        <sbfcanno:unitDefinition xmlns:sbfcanno="http://www.sbfc.org/sbfcanno" sbfcanno:name="">
+            <sbfcanno:kindMETRE sbfcanno:exponent="2.0" sbfcanno:kind="METRE" sbfcanno:multiplier="1.0" sbfcanno:scale="0"/>
+        </sbfcanno:unitDefinition>
+    </extension>
+    <map language="process description">
+        <glyph class="compartment" id="CompartmentGlyph_1">
+            <bbox w="390.0" h="220.0" x="5.0" y="5.0"/>
+        </glyph>
+    </map>
+</sbgn>

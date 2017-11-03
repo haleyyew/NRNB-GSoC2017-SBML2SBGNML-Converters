@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="lib" path="lib/jsbml-1.3-SNAPSHOT-20170704-with-dependencies.jar"/>
+	<classpathentry kind="lib" path="lib/libsbml-5.15.0.jar"/>
+	<classpathentry kind="lib" path="lib/org.sbgn-m2.jar"/>
+	<classpathentry kind="lib" path="lib/registry-lib-1.1.1.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/sbfc-1.3.8-SNAPSHOT-2017-08-25.jar"/>
+	<classpathentry kind="lib" path="lib/sbfc-gsoc2017-converters-0.8.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" layout:required="false" level="3" version="1" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1">
+  <model>
+    <layout:listOfLayouts xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <layout:layout>
+        <layout:dimensions layout:height="400" layout:width="450"/>
+        <layout:listOfSpeciesGlyphs>
+          <layout:speciesGlyph layout:id="SpeciesGlyph_Protein" layout:species="Protein">
+            <layout:boundingBox layout:id="bb1">
+              <layout:position layout:x="30" layout:y="230"/>
+              <layout:dimensions layout:height="40" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="SpeciesGlyph_ProteinP" layout:species="ProteinP" render:objectRole="phosphorylated">
+            <layout:boundingBox layout:id="bb2">
+              <layout:position layout:x="330" layout:y="230"/>
+              <layout:dimensions layout:height="40" layout:width="93"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+          <layout:speciesGlyph layout:id="SpeciesGlyph_ProteinKinase" layout:species="ProteinKinase">
+            <layout:boundingBox layout:id="bb6">
+              <layout:position layout:x="180" layout:y="30"/>
+              <layout:dimensions layout:height="50" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:speciesGlyph>
+        </layout:listOfSpeciesGlyphs>
+        <layout:listOfReactionGlyphs>
+          <layout:reactionGlyph layout:id="ReactionGlyph_Phosphorylation" layout:reaction="Phosphorylation">
+            <layout:curve>
+              <layout:listOfCurveSegments>
+                <layout:curveSegment xsi:type="CubicBezier">
+                  <layout:start layout:x="115" layout:y="225"/>
+                  <layout:end layout:x="205" layout:y="200"/>
+                  <layout:basePoint1 layout:x="170" layout:y="200"/>
+                  <layout:basePoint2 layout:x="170" layout:y="200"/>
+                </layout:curveSegment>
+              </layout:listOfCurveSegments>
+            </layout:curve>
+            <layout:listOfSpeciesReferenceGlyphs>
+              <layout:speciesReferenceGlyph layout:id="SpeciesReferenceGlyph_Protein" layout:role="substrate" layout:speciesGlyph="SpeciesGlyph_Protein" layout:speciesReference="SpeciesReference_Protein" render:objectRole="substrate">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="CubicBezier">
+                      <layout:start layout:x="115" layout:y="225"/>
+                      <layout:end layout:x="205" layout:y="200"/>
+                      <layout:basePoint1 layout:x="170" layout:y="200"/>
+                      <layout:basePoint2 layout:x="170" layout:y="200"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="SpeciesReferenceGlyph_ProteinP" layout:role="product" layout:speciesGlyph="SpeciesGlyph_ProteinP" layout:speciesReference="SpeciesReference_ProteinP" render:objectRole="product">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="CubicBezier">
+                      <layout:start layout:x="235" layout:y="200"/>
+                      <layout:end layout:x="320" layout:y="230"/>
+                      <layout:basePoint1 layout:x="270" layout:y="200"/>
+                      <layout:basePoint2 layout:x="270" layout:y="200"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+              <layout:speciesReferenceGlyph layout:id="SpeciesReferenceGlyph_ProteinKinase" layout:role="activator" layout:speciesGlyph="SpeciesGlyph_ProteinKinase" layout:speciesReference="ModifierSpeciesReference_ProteinKinase" render:objectRole="catalyst">
+                <layout:curve>
+                  <layout:listOfCurveSegments>
+                    <layout:curveSegment xsi:type="LineSegment">
+                      <layout:start layout:x="220" layout:y="85"/>
+                      <layout:end layout:x="220" layout:y="180"/>
+                    </layout:curveSegment>
+                  </layout:listOfCurveSegments>
+                </layout:curve>
+              </layout:speciesReferenceGlyph>
+            </layout:listOfSpeciesReferenceGlyphs>
+          </layout:reactionGlyph>
+        </layout:listOfReactionGlyphs>
+        <layout:listOfTextGlyphs>
+          <layout:textGlyph layout:graphicalObject="SpeciesGlyph_Protein" layout:id="TextGlyph_Protein" layout:originOfText="Protein">
+            <layout:boundingBox layout:id="bb9">
+              <layout:position layout:x="30" layout:y="220"/>
+              <layout:dimensions layout:height="40" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="SpeciesGlyph_ProteinP" layout:id="TextGlyph_ProteinP" layout:originOfText="ProteinP">
+            <layout:boundingBox layout:id="bb10">
+              <layout:position layout:x="330" layout:y="220"/>
+              <layout:dimensions layout:height="40" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="SpeciesGlyph_ProteinKinase" layout:id="TextGlyph_ProteinKinase1" layout:text="Protein-">
+            <layout:boundingBox layout:id="bb14">
+              <layout:position layout:x="180" layout:y="35"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+          <layout:textGlyph layout:graphicalObject="SpeciesGlyph_ProteinKinase" layout:id="TextGlyph_Proteinkinase2" layout:text="kinase">
+            <layout:boundingBox layout:id="bb15">
+              <layout:position layout:x="180" layout:y="55"/>
+              <layout:dimensions layout:height="20" layout:width="80"/>
+            </layout:boundingBox>
+          </layout:textGlyph>
+        </layout:listOfTextGlyphs>
+      </layout:layout>
+    </layout:listOfLayouts>
+    <listOfCompartments>
+      <compartment constant="true" id="Cell" spatialDimensions="3" units="volume"/>
+    </listOfCompartments>
+    <listOfSpecies>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="Protein" name="Protein" substanceUnits="substance"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="ProteinP" name="Protein" substanceUnits="substance"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="P" name="P" substanceUnits="substance"/>
+      <species boundaryCondition="false" compartment="Cell" constant="false" hasOnlySubstanceUnits="false" id="ProteinKinase" name="Protein Kinase" substanceUnits="substance"/>
+    </listOfSpecies>
+    <listOfReactions>
+      <reaction fast="false" id="Phosphorylation" reversible="false">
+        <listOfReactants>
+          <speciesReference constant="true" id="SpeciesReference_Protein" species="Protein" stoichiometry="1"/>
+        </listOfReactants>
+        <listOfProducts>
+          <speciesReference constant="true" id="SpeciesReference_ProteinP" species="ProteinP" stoichiometry="1"/>
+        </listOfProducts>
+        <listOfModifiers>
+          <modifierSpeciesReference id="ModifierSpeciesReference_ProteinKinase" species="ProteinKinase"/>
+        </listOfModifiers>
+      </reaction>
+    </listOfReactions>
+  </model>
+</sbml>

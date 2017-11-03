@@ -1,0 +1,1578 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<sbml xmlns="http://www.sbml.org/sbml/level3/version1/core" layout:required="false" level="3" render:required="false" version="1" xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1">
+    <model>
+        <layout:listOfLayouts xmlns:layout="http://www.sbml.org/sbml/level3/version1/layout/version1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <layout:layout>
+                <render:listOfRenderInformation xmlns:render="http://www.sbml.org/sbml/level3/version1/render/version1">
+					
+<render:renderInformation id="SBGN_default" programName="SBGN Default style" programVersion="1.0" xmlns="http://projects.eml.org/bcb/sbml/render/level2">
+  <render:listOfColorDefinitions>
+    <render:colorDefinition id="black" value="#000000" />
+    <render:colorDefinition id="white" value="#ffffff" />
+    <render:colorDefinition id="transparent" value="#ffffff00" />
+    <render:colorDefinition id="EmptySetOutline" value="#808080" />
+    <render:colorDefinition id="EmptySetGradientStart" value="#ffffff" />
+    <render:colorDefinition id="EmptySetGradientEnd" value="#d3d3d3" />
+    <render:colorDefinition id="CompartmentBorder" value="#666666" />
+    <render:colorDefinition id="CompartmentGradientStart" value="#CCCCCC" />
+    <render:colorDefinition id="CompartmentGradientEnd" value="#CCCCFF" />
+    <render:colorDefinition id="CloneMarkerColor" value="#ffa500" />
+    <render:colorDefinition id="EPNGradientStart" value="#ffffff" />
+    <render:colorDefinition id="EPNGradientEnd" value="#c0c0c0" />
+  </render:listOfColorDefinitions>
+  <render:listOfGradientDefinitions>
+    <render:linearGradient x1="0%" y1="0%" z1="0%" x2="100%" y2="100%" z2="100%" id="EPNBackgroundGradient" spreadMethod="pad">
+      <render:stop offset="0%" stop-color="EPNGradientStart" />
+      <render:stop offset="100%" stop-color="EPNGradientEnd" />
+    </render:linearGradient>
+    <render:linearGradient x1="50%" y1="0%" z1="0%" x2="50%" y2="100%" z2="100%" id="cloneMarker" spreadMethod="pad">
+      <render:stop offset="0.0" stop-color="transparent" />
+      <render:stop offset="0.75" stop-color="transparent" />
+      <render:stop offset="0.76" stop-color="CloneMarkerColor" />
+      <render:stop offset="1.0" stop-color="CloneMarkerColor" />
+    </render:linearGradient>
+    <render:linearGradient x1="0%" y1="0%" z1="0%" x2="100%" y2="100%" z2="100%" id="EmptySetGradient" spreadMethod="pad">
+      <render:stop offset="0%" stop-color="EmptySetGradientStart" />
+      <render:stop offset="100%" stop-color="EmptySetGradientEnd" />
+    </render:linearGradient>
+    <render:linearGradient x1="0%" y1="0%" z1="0%" x2="100%" y2="100%" z2="100%" id="CompartmentGradient" spreadMethod="pad">
+      <!--<stop offset="0%" stop-color="#ffdead" />
+      <stop offset="100%" stop-color="#ffebcd" />-->
+      <render:stop offset="0%" stop-color="CompartmentGradientStart" />
+      <render:stop offset="100%" stop-color="CompartmentGradientEnd" />
+    </render:linearGradient>
+  </render:listOfGradientDefinitions>
+  
+  <render:listOfLineEndings>
+
+    <render:lineEnding id="modulation" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.001" fill="white">
+        <render:polygon fill="ffffff" stroke="black" stroke-width="0.001" >
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="50%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="50%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="50%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="50%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+
+
+    <render:lineEnding id="necessary_stimulation" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.001" fill="white">
+        <render:polygon fill="white">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>           
+       <render:polygon fill="white">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="30%" y="20%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="30%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="30%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="30%" y="20%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+
+    <render:lineEnding id="old_stimulation" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.001" fill="white">
+        <render:polygon fill="white">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+    
+    <render:lineEnding id="stimulation" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.001" fill="white">
+        <render:polygon fill="white">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+
+    <render:lineEnding id="product" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.001" fill="black">
+        <render:polygon fill="black">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="33%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+    <!--<lineEnding id="activator" enableRotationalMapping="true">
+      <boundingBox>
+        <position x="-1" y="-2.5" />
+        <layout:dimensions width="5" height="5" />
+      </boundingBox>
+      <render:g stroke="black" stroke-width="1">
+        <render:ellipse stroke="black" stroke-width="1.0" cx="2.5" cy="2.5" cz="0.0" rx="2" ry="2" />
+      </render:g>
+    </lineEnding>-->
+    <render:lineEnding id="activator" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-12" y="-6" />
+        <layout:dimensions width="12" height="12" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="1" fill="white">
+        <render:ellipse stroke="black" stroke-width="1.0" cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:lineEnding>
+ 
+    <render:lineEnding id="modifier" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="0" y="-2.50" />
+        <layout:dimensions width="5" height="5" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="1" fill="white">
+        <render:polygon>
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0" y="2.5" />
+              <render:element xsi:type="RenderPoint" x="2.5" y="5" />
+            
+            <render:element xsi:type="RenderPoint" x="2.5" y="5" />
+              <render:element xsi:type="RenderPoint" x="5" y="2.5" />
+            
+            <render:element xsi:type="RenderPoint" x="5" y="2.5" />
+              <render:element xsi:type="RenderPoint" x="2.5" y="0" />
+            
+            <render:element xsi:type="RenderPoint" x="2.5" y="0" />
+              <render:element xsi:type="RenderPoint" x="0" y="2.5" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+    <render:lineEnding id="inhibitor" enableRotationalMapping="true">
+      <layout:boundingBox>
+		  <!-- x is the direction along the line-->
+        <layout:position x="-2" y="-4" />
+        <layout:dimensions width="2" height="8" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.1" fill="black">
+        <render:polygon>
+          <!--<listOfElements>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="0%" y="0%"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="100%" y="0%"/>
+            <render:element xsi:type="RenderPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  x="100%" y="100%"/>
+            <render:element xsi:type="RenderPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  x="0%" y="100%"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="0%" y="0%"/>
+          </listOfElements>  -->
+                     <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+          
+        </render:polygon>
+      </render:g>
+    </render:lineEnding>
+    <render:lineEnding id="absolute_inhibitor" enableRotationalMapping="true">
+      <layout:boundingBox>
+        <layout:position x="-2.5" y="-5" />
+        <layout:dimensions width="5" height="10" />
+      </layout:boundingBox>
+      <render:g stroke="black" stroke-width="0.1" fill="black">
+        <render:polygon stroke="black" stroke-width="0.1" >
+          <listOfElements>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="0.0" y="0.0"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="0.3" y="0.0"/>
+            <render:element xsi:type="RenderPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  x="0.3" y="10.0"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="0.0" y="10.0"/>
+          </listOfElements>
+        </render:polygon>
+        <render:polygon stroke="black" stroke-width="0.1" >
+          <listOfElements>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="4.0" y="2.0"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="4.2" y="2.0"/>
+            <render:element xsi:type="RenderPoint" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  x="4.2" y="8.0"/>
+            <render:element xsi:type="RenderPoint"  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" x="4.0" y="8.0"/>
+          </listOfElements>
+        </render:polygon>        
+      </render:g>
+    </render:lineEnding>
+  </render:listOfLineEndings>
+  
+  <render:listOfStyles>
+    <render:style roleList="defaultText" id="defaultText">
+      <render:g stroke="black" stroke-width="1" font-family="Verdana" font-size="10" font-weight="normal" font-style="normal" text-anchor="middle" render:vtext-anchor="middle"></render:g>
+    </render:style>
+        <render:style roleList="topText" id="topText">
+      <render:g stroke="black" stroke-width="1" font-family="Verdana" font-size="10" font-weight="normal" font-style="normal" text-anchor="middle" render:vtext-anchor="top"></render:g>
+    </render:style>
+    
+    <render:style roleList="substrate" id="substrate">
+		<!--consumption-->
+      <render:g stroke="black" stroke-width="2.0" />
+    </render:style>
+    
+    <render:style roleList="SBO0000398" id="SBO0000398"> 
+		<!--logic arc -->
+      <render:g stroke="black" stroke-width="2.0" />
+    </render:style>
+    
+    <render:style roleList="equivalence" id="equivalence">
+      <render:g stroke="black" stroke-width="2.0" />
+    </render:style>
+    
+    
+    <render:style roleList="SBO0000167" id="SBO0000167">
+		<!-- process -->
+      <render:g stroke="black" stroke-width="1" fill="white">
+        <render:rectangle stroke="black" x="0%" y="0%" width="8" height="8" />
+      </render:g>
+    </render:style>
+    
+    
+     
+    
+    <render:style roleList="SBO0000177" id="SBO0000177">
+		<!-- association -->
+      <render:g stroke="black" stroke-width="2" fill="black">
+        <render:ellipse stroke="black" stroke-width="1.0" cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000169" id="SBO0000169">
+		<!--inhibition-->
+      <render:g stroke="black" stroke-width="2.0" endHead="inhibitor" />
+    </render:style>
+    <render:style roleList="SBO0000171" id="SBO0000171">
+		<!--necessary stimulation-->
+      <render:g stroke="black" stroke-width="2.0" endHead="necessary_stimulation" />
+    </render:style>
+    <render:style roleList="SBO0000172" id="SBO0000172">
+		<!--catalysis-->
+      <render:g stroke="black" stroke-width="2.0" fill="white" endHead="activator" />
+    </render:style>
+    <render:style roleList="SBO0000168" id="SBO0000168">
+		<!--unknown influence-->
+      <render:g stroke="black" stroke-width="2.0" fill="white" endHead="modulation" />
+    </render:style>
+    <render:style roleList="SBO0000170" id="SBO0000170">
+		<!-- stimulation -->
+      <render:g stroke="black" stroke-width="2.0" fill="white" endHead="stimulation" />
+    </render:style>
+    <render:style roleList="SBO0000180" id="SBO0000180">
+		<!-- dissociation -->
+      <render:g stroke="black" stroke-width="2" fill="white">
+        <render:ellipse stroke="black" stroke-width="1.0" cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+        <render:ellipse stroke="black" stroke-width="1.0" cx="50%" cy="50%" cz="0.0" rx="25%" ry="25%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="product" id="product">
+		<!--production-->
+      <render:g stroke="black" stroke-width="2.0" endHead="product" />
+    </render:style>
+    <render:style roleList="interaction" id="interaction">
+      <render:g stroke="black" stroke-width="2.0" endHead="product" startHead="product" />
+    </render:style>
+
+    <render:style roleList="SBO0000354" id="SBO0000354">
+      <!--Nucleic Acid Feature-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="100%"  render:basepoint2_x="0%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000354multimer" id="SBO0000354multimer">
+      <!--Nucleic Acid Feature Multimer-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="5%" y="80%"  render:basepoint1_x="5%" render:basepoint1_y="100%"  render:basepoint2_x="5%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="95%"  render:basepoint1_x="95%" render:basepoint1_y="95%"  render:basepoint2_x="95%" render:basepoint2_y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="95%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="95%"  render:basepoint2_x="0%" render:basepoint2_y="95%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+
+        
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000354clone" id="SBO0000354clone">
+      <!--Cloned Nucleic Acid Feature-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="100%"  render:basepoint2_x="0%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="100%"  render:basepoint2_x="0%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000354multimerclone" id="SBO0000354multimerclone">
+      <!--Nucleic Acid Feature Multimer-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="5%" y="80%"  render:basepoint1_x="5%" render:basepoint1_y="100%"  render:basepoint2_x="5%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="5%" y="80%"  render:basepoint1_x="5%" render:basepoint1_y="100%"  render:basepoint2_x="5%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="95%"  render:basepoint1_x="95%" render:basepoint1_y="95%"  render:basepoint2_x="95%" render:basepoint2_y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="95%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="95%"  render:basepoint2_x="0%" render:basepoint2_y="95%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="95%"  render:basepoint1_x="95%" render:basepoint1_y="95%"  render:basepoint2_x="95%" render:basepoint2_y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="95%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="95%"  render:basepoint2_x="0%" render:basepoint2_y="95%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+
+
+      </render:g>
+    </render:style>
+
+
+    <render:style roleList="SBO0000245" id="SBO0000245">
+      <!-- Macromolecule -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:rectangle x="0%" y="0%" width="100%" height="100%" rx="10%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000245multimer" id="SBO0000245multimer">
+      <!-- Macromolecule Multimer-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:rectangle x="5%" y="5%" width="95%" height="95%" rx="10%" />
+        <render:rectangle x="0%" y="0%" width="95%" height="95%" rx="10%" />
+      </render:g>      
+    </render:style>
+    <render:style roleList="SBO0000245clone" id="SBO0000245clone">
+      <!-- Cloned Macromolecule -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:rectangle x="0%" y="0%" width="100%" height="100%" rx="10%" />
+        <render:rectangle fill="cloneMarker" x="0%" y="75%" width="100%" height="25%" rx="10%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000245multimerclone" id="SBO0000245multimerclone">
+      <!-- Cloned Macromolecule Multimer-->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:rectangle x="5%" y="5%" width="95%" height="95%" rx="10%" />
+        <render:rectangle fill="cloneMarker" x="5%" y="75%" width="95%" height="25%" rx="10%" />
+        <render:rectangle x="0%" y="0%" width="95%" height="95%" rx="10%" />
+        <render:rectangle fill="cloneMarker" x="0%" y="75%" width="95%" height="25%" rx="10%" />
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="SBO0000285" id="SBO0000285">
+      <!-- Unspecified Entity  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000285multimer" id="SBO0000285multimer">
+      <!-- Unspecified Entity Multimer -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="45%" cy="45%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse cx="55%" cy="55%" cz="0.0" rx="45%" ry="45%" />
+      </render:g>
+    </render:style>    
+    <render:style roleList="SBO0000285clone" id="SBO0000285clone">
+      <!-- Cloned Unspecified Entity  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+        <render:ellipse fill="cloneMarker" cx="50%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000285multimerclone" id="SBO0000285multimerclone">
+      <!-- Cloned Unspecified Entity Multimer  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="45%" cy="45%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse fill="cloneMarker" cx="45%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+        <render:ellipse cx="55%" cy="55%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse fill="cloneMarker" cx="55%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="SBO0000247" id="SBO0000247">
+      <!-- Simple Chemical  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000247multimer" id="SBO0000247multimer">
+      <!-- Simple Chemical Multimer -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="55%" cy="55%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse cx="45%" cy="45%" cz="0.0" rx="45%" ry="45%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000247clone" id="SBO0000247clone">
+      <!-- Cloned Simple Chemical  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+        <render:ellipse fill="cloneMarker" cx="50%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000247multimerclone" id="SBO0000247multimerclone">
+      <!-- Cloned Simple Chemical Multimer -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="55%" cy="55%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse fill="cloneMarker" cx="55%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+        <render:ellipse cx="45%" cy="45%" cz="0.0" rx="45%" ry="45%" />
+        <render:ellipse fill="cloneMarker" cx="45%" cy="75%" cz="0.0" rx="25%" ry="25%" />
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="SBO0000291" id="SBO0000291">
+      <!-- Source / Sink  -->
+      <render:g stroke="EmptySetOutline" stroke-width="1.25" fill="EmptySetGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+        
+        <render:polygon stroke="black" stroke-width="2">
+            <render:listOfElements>
+
+                <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+                <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              
+            </render:listOfElements>
+        </render:polygon>
+        
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="SBO0000253" id="SBO0000253">
+      <annotation>
+        <sbmllayout xmlns="http://sysbioapps.dyndns.org/renderAnnotation" type="complex" />
+      </annotation>
+      <!-- Complex  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>
+          <!--<render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>-->
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000253multimer" id="SBO0000253multimer">
+      <!-- Complex Multimer -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="15%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="15%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="15%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="15%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000253clone" id="SBO0000253clone">
+      <!-- Cloned Complex  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000253multimerclone" id="SBO0000253multimerclone">
+      <!-- Cloned Complex Multimer -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="15%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="5%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="5%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="15%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="15%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="15%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="5%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="15%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="5%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="5%" y="85%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="70%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="70%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="70%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="70%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="80%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="95%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="85%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="95%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="85%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    
+    
+    <render:style roleList="SBO0000405" id="SBO0000405">
+      <!-- Perturbing Agent  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000405clone" id="SBO0000405clone">
+      <!-- Cloned Perturbing Agent  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="40%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="40%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="40%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="40%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    
+        <render:style roleList="perturbation" id="perturbation">
+      <!-- Perturbation  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    
+        <render:style roleList="SBO0000412" id="SBO0000412">
+      <!-- biological activity -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>    
+    
+    <render:style roleList="Tag" id="Tag">
+      <!-- Tag  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="75%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="75%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="75%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="75%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="Tagright" id="Tagright">
+      <!-- Tag  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="75%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="75%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="75%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="75%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="Tagup" id="Tagup">
+      <!-- Tag  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="25%" />
+              <render:element xsi:type="RenderPoint" x="50%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="50%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="25%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="25%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="25%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="Tagdown" id="Tagdown">
+      <!-- Tag  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="50%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="50%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="75%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="Tagleft" id="Tagleft">
+      <!-- Tag  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="25%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="25%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="25%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="25%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000358" id="SBO0000358">
+      <!-- Observable  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient" >
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="20%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000358clone" id="SBO0000358clone">
+      <!-- Cloned Observable  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:polygon stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="20%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        <render:polygon fill="cloneMarker">
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="20%" y="40%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="40%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="40%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="40%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>    
+    <render:style roleList="SBO0000395" id="SBO0000395">
+      <!-- Submap -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:rectangle x="0" y="0" width="100%" height="100%" rx="0%" ry="0%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="SBO0000289" id="SBO0000289">
+      <!-- Compartment -->
+      <render:g stroke="CompartmentBorder" stroke-width="7" fill="CompartmentGradient">
+        <render:rectangle x="0" y="0" width="100%" height="100%" rx="10%" ry="10%" />
+      </render:g>
+    </render:style>
+    
+    <!--       Phenotype 
+    <render:style roleList="SBO0000358" id="SBO0000358">
+ 
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="20%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>  
+    -->
+    
+    <render:style roleList="SBO0000397" id="SBO0000397">
+      <!--Omitted Process-->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" fill="white" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="20%" y="20%" />
+              <render:element xsi:type="RenderPoint" x="30%" y="80%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="40%" y="20%" />
+              <render:element xsi:type="RenderPoint" x="50%" y="80%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        
+        
+      </render:g>
+    </render:style> 
+    
+    <render:style roleList="SBO0000396" id="SBO0000396">
+      <!--Uncertain Process-->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" fill="white" >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+        
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>        
+            <render:element xsi:type="RenderPoint" x="10%" y="10%" />
+            <render:element xsi:type="RenderCubicBezier" x="100%" y="100%"  render:basepoint1_x="70%" render:basepoint1_y="30%"  render:basepoint2_x="70%" render:basepoint2_y="30%" />
+          </render:listOfElements>
+        </render:polygon>
+                 
+         
+      </render:g>
+    </render:style> 
+    
+    <render:style roleList="statevar" id="statevar">
+      <!-- State Variable  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="unitofinfo" id="unitofinfo">
+      <!--Unit of Information-->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2"  >
+          <render:listOfElements>
+
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>    
+     
+     <render:style roleList="unitofinfoSBO0000245" id="unitofinfoSBO0000245">
+      <!-- Unit of information for Biological activity Macromolecule -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:rectangle x="0%" y="0%" width="100%" height="100%" rx="10%" />
+      </render:g>
+    </render:style>
+
+    
+    <render:style roleList="unitofinfoSBO0000354" id="unitofinfoSBO0000354">
+      <!--Unit of information for Biological activity Nucleic Acid Feature-->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="80%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="80%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="80%" y="100%"  render:basepoint1_x="100%" render:basepoint1_y="100%"  render:basepoint2_x="100%" render:basepoint2_y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="100%" />
+            
+            <render:element xsi:type="RenderCubicBezier" x="0%" y="80%"  render:basepoint1_x="0%" render:basepoint1_y="100%"  render:basepoint2_x="0%" render:basepoint2_y="100%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+    
+    <render:style roleList="unitofinfoSBO0000247" id="unitofinfoSBO0000247">
+      <!-- Unit of information for Biological activity Simple Chemical  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    
+        <render:style roleList="unitofinfoSBO0000253" id="unitofinfoSBO0000253">
+      <annotation>
+        <sbmllayout xmlns="http://sysbioapps.dyndns.org/renderAnnotation" type="complex" />
+      </annotation>
+      <!-- Unit of information for Biological activity Complex  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="10%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="90%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="10%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="90%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="10%" />
+            
+          </render:listOfElements>
+
+        </render:polygon>
+      </render:g>
+    </render:style>
+    
+        <render:style roleList="unitofinfoSBO0000285" id="unitofinfoSBO0000285">
+      <!-- Unit of information for Biological activity Unspecified Entity  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    
+    
+        <render:style roleList="unitofinfoSBO0000405" id="unitofinfoSBO0000405">
+      <!-- Unit of information for Biological activity Perturbing Agent  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:polygon stroke="black" stroke-width="2" >
+          <render:listOfElements>
+            <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="0%" />
+              <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="80%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="100%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+            
+            <render:element xsi:type="RenderPoint" x="0%" y="100%" />
+              <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+            
+            <render:element xsi:type="RenderPoint" x="20%" y="50%" />
+              <render:element xsi:type="RenderPoint" x="0%" y="0%" />
+            
+          </render:listOfElements>
+        </render:polygon>
+      </render:g>
+    </render:style>
+      
+        
+    <render:style roleList="and" id="and">
+      <!-- And  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="not" id="not">
+      <!-- Not  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    <render:style roleList="or" id="or">
+      <!-- 	Or  -->
+      <render:g stroke="black" stroke-width="2" fill="EPNBackgroundGradient">
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>            
+    
+        <render:style roleList="SBO0000225" id="SBO0000225">
+      <!-- delay  -->
+      <render:g stroke="black" stroke-width="2" >
+        <render:ellipse cx="50%" cy="50%" cz="0.0" rx="50%" ry="50%" />
+      </render:g>
+    </render:style>
+    
+  </render:listOfStyles>
+</render:renderInformation>
+
+                </render:listOfRenderInformation>
+                <layout:dimensions layout:depth="0" layout:height="0" layout:width="0"/>
+                <layout:listOfAdditionalGraphicalObjects>
+                </layout:listOfAdditionalGraphicalObjects>
+                <layout:listOfSpeciesGlyphs>				
+                </layout:listOfSpeciesGlyphs>
+                <layout:listOfTextGlyphs>
+                </layout:listOfTextGlyphs>
+            </layout:layout>
+        </layout:listOfLayouts>
+        <listOfCompartments>
+        </listOfCompartments>
+        <listOfSpecies>
+        </listOfSpecies>
+        <listOfReactions>
+
+        </listOfReactions>
+    </model>
+</sbml>

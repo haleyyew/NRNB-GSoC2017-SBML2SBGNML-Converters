@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<sbgn xmlns="http://sbgn.org/libsbgn/0.2">
+    <map language="process description">
+		<glyph class="compartment" id="compartment_glyph">
+			<label text="cytoplasm"/>
+			<bbox x="5" y="5" w="560" h="300"/>
+		</glyph>	
+        <glyph id="glyph9" class="macromolecule">
+            <label text="hexokinase"/>
+            <bbox y="40.0" x="170.0" h="60.0" w="120.0"/>
+        </glyph>
+        <glyph id="glyph0" class="simple chemical">
+            <label text="glucose"/>
+            <bbox y="140.0" x="90.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph6" class="simple chemical">
+            <label text="ATP"/>
+            <clone/>
+            <bbox y="230.0" x="140.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph8" class="process">
+            <bbox y="160.0" x="220.0" h="20.0" w="20.0"/>
+            <port id="glyph8.1" y="170.0" x="210.0"/>
+            <port id="glyph8.2" y="170.0" x="250.0"/>
+        </glyph>
+        <glyph id="glyph7" class="simple chemical">
+            <label text="ADP"/>
+            <clone/>
+            <bbox y="230.0" x="270.0" h="60.0" w="60.0"/>
+        </glyph>
+        <glyph id="glyph1" class="simple chemical">
+            <label text="glucose&#xA;6P"/>
+            <bbox y="140.0" x="320.0" h="60.0" w="60.0"/>
+        </glyph>
+         <arc target="glyph8" source="glyph9" class="catalysis">
+            <start y="100.0" x="230.0"/>
+            <end y="160.0" x="230.0"/>
+        </arc>
+        <arc target="glyph8.1" source="glyph0" class="consumption">
+            <start y="170.0" x="150.0"/>
+            <end y="170.0" x="210.0"/>
+        </arc>
+        <arc target="glyph1" source="glyph8.2" class="production">
+            <start y="170.0" x="250.0"/>
+            <end y="170.0" x="320.0"/>
+        </arc>
+        <arc target="glyph8.1" source="glyph6" class="consumption">
+            <start y="232.58565" x="182.18416"/>
+            <end y="170.0" x="210.0"/>
+        </arc>
+        <arc target="glyph7" source="glyph8.2" class="production">
+            <start y="170.0" x="250.0"/>
+            <end y="236.31943" x="281.5818"/>
+        </arc>
+        
+        <glyph compartmentOrder="-27.0" id="glyph10" class="compartment">
+            <label text="Compartement">
+                <bbox y="26.0" x="716.5" h="25.0" w="139.0"/>
+            </label>
+            <bbox y="18.0" x="17.0" h="1350.0" w="1538.0"/>
+        </glyph>
+        <!-- assumption: start=source, end=target-->
+        <arc target="glyph13" source="glyph23.1" id="arc18" class="inhibition">
+            <end y="326.8598" x="643.2757"/>
+            <start y="423.0" x="541.5"/>
+        </arc>
+        <glyph compartmentRef="glyph10" id="glyph13" class="simple chemical">
+            <label text="simple chemical"/>
+            <clone/>
+            <bbox y="274.0" x="629.0" h="68.0" w="170.0"/>
+        </glyph>
+        
+        <glyph id="glyph23" orientation="vertical" class="and">
+            <bbox y="444.0" x="520.5" h="42.0" w="42.0"/>
+            <port y="423.0" x="541.5" id="glyph23.1"/>
+            <port y="507.0" x="541.5" id="glyph23.2"/>
+        </glyph>
+    </map>
+</sbgn>
